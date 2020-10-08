@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/src/default.css" />
 </head>
 <body>
-    <div id="root">
+    <div id="root" class="container-fluid">
         <h1 id="title">Resumer Maker</h1>
         <h2 id="intake-form">Intake Form</h2>
 
@@ -16,9 +16,7 @@
             <h2 id="user-information-title">User Information</h2>
             <div class="input-group">
                 <label id="first-name-label" for="first-name-input">First Name</label>
-                <div class="col-sm-12">
                         <input type="text" name="first-name" id="first-name" class="form-control" />
-                </div>
             </div>
             <div class="input-group">
                 <label id="last-name-label" for="last-name-input">Last Name</label>
@@ -29,28 +27,43 @@
             <div class="input-group">
                 <label for="state">State</label>
                 <div class="col-sm-12">
-                    <input type="text" name="state" id="state" />
+                    <input type="text" name="state" id="state" class="form-control" />
                 </div>
             </div>
             <div class="input-group">
                 <label for="city-input">City</label>
                 <div class="col-sm-12">
-                    <input type="text" name="city" id="city" />
+                    <input type="text" name="city" id="city" class="form-control" />
                 </div>
             </div>
         </section>
 
         <section id="summary-strategy">
             <h2 id="summary-strategy-title">Summary Strategy</h2>
-            <label for="sentence1" class="display-as-block">What did you do? For how long?</label>
-            <input type="text" name="summary-strategy-sentence1" id="summary-strategy-sentence1" value="" class="display-as-block" />
-            <label for="sentence2" class="display-as-block, width100">Inform us about your personality and attitude towards work.</label>
-            <input type="text" name="summary-strategy-sentence2" id="summary-strategy-sentence2" value="" class="display-as-block" />
-            <label for="sentence3" class="display-as-block">Tell us of your awards or accolades.</label>
-            <input type="text" name="summary-strategy-sentence3" id="summary-strategy-sentence3" value="" class="display-as-block" />
-            <label for="sentence4" class="display-as-block">Describe what type of work you're looking for?</label>
-            <input type="text" name="summary-strategy-sentence4" id="summary-strategy-sentence4" value="" class="display-as-block" />
-            
+            <div class="input-group">
+                <label for="sentence1" class="display-as-block">What was your primary job role? how long? (One sentence; 10 words or less)</label>
+                <div class="col-sm-12">
+                    <input type="text" name="summary-strategy-sentence1" id="summary-strategy-sentence1" value="" class="form-control" />
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="sentence2" class="display-as-block, width100">In one sentence (of 10 words or less), describe your personality? ... and attitude towards work?</label>
+                <div class="col-sm-12">
+                    <input type="text" name="summary-strategy-sentence2" id="summary-strategy-sentence2" value="" class="form-control" />
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="sentence3" class="display-as-block">In one sentence (of 10 words or less), descibe you accolades? ... and awards?</label>
+                <div class="col-sm-12">
+                    <input type="text" name="summary-strategy-sentence3" id="summary-strategy-sentence3" value="" class="form-control" />
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="sentence4" class="display-as-block">In one sentence (of 10 words or less), describe the work you're looking for?</label>
+                <div class="col-sm-12">
+                    <input type="text" name="summary-strategy-sentence4" id="summary-strategy-sentence4" value="" class="form-control" />
+                </div>
+            </div>
         </section>
         <section id="summary-of-qualifications">
             <h2 id="summary-of-qualifications-title">Summary of Qualifications</h2>
