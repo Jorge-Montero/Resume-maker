@@ -4,59 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Maker</title>
-    <link rel="stylesheet" href="/src/default.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/src/default.css" />
 </head>
 <body>
     <div id="root">
         <h1 id="title">Resumer Maker</h1>
         <h2 id="intake-form">Intake Form</h2>
+
         <section id="user-information">
             <h2 id="user-information-title">User Information</h2>
-            <label for="first-name-input">First Name</label>
-            <input type="text" name="first-name" id="first-name-input" />
-            <label for="last-name-input">Last Name</label>
-            <input type="text" name="last-name" id="last-last-input" />
-            <label for="state-input">State</label>
-            <input type="text" name="state" id="state-input">
-            <label for="city-input">State</label>
-            <input type="text" name="city" id="city-input">
+            <div class="input-group">
+                <label id="first-name-label" for="first-name-input">First Name</label>
+                <div class="col-sm-12">
+                        <input type="text" name="first-name" id="first-name" class="form-control" />
+                </div>
+            </div>
+            <div class="input-group">
+                <label id="last-name-label" for="last-name-input">Last Name</label>
+                <div class="col-sm-12">
+                    <input type="text" name="last-name" id="last-last" class="form-control" />
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="state">State</label>
+                <div class="col-sm-12">
+                    <input type="text" name="state" id="state" />
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="city-input">City</label>
+                <div class="col-sm-12">
+                    <input type="text" name="city" id="city" />
+                </div>
+            </div>
         </section>
+
         <section id="summary-strategy">
             <h2 id="summary-strategy-title">Summary Strategy</h2>
-            <label for="sentence1"></label>
-            <input type="text" name="summary-strategy-sentence1" id="summary-strategy-sentence1" value="What did you do? For how long?" />
-            <label for="sentence2"></label>
-            <input type="text" name="summary-strategy-sentence2" id="summary-strategy-sentence2" value="Inform us about your personality and attitude towards work.">
-            <label for="sentence3"></label>
-            <input type="text" name="summary-strategy-sentence3" id="summary-strategy-sentence3" value="Tell us of your awards or accolades.">
-            <label for="sentence4"></label>
-            <input type="text" name="summary-strategy-sentence4" id="summary-strategy-sentence4" value="Describe what type of work you're looking for?">
+            <label for="sentence1" class="display-as-block">What did you do? For how long?</label>
+            <input type="text" name="summary-strategy-sentence1" id="summary-strategy-sentence1" value="" class="display-as-block" />
+            <label for="sentence2" class="display-as-block, width100">Inform us about your personality and attitude towards work.</label>
+            <input type="text" name="summary-strategy-sentence2" id="summary-strategy-sentence2" value="" class="display-as-block" />
+            <label for="sentence3" class="display-as-block">Tell us of your awards or accolades.</label>
+            <input type="text" name="summary-strategy-sentence3" id="summary-strategy-sentence3" value="" class="display-as-block" />
+            <label for="sentence4" class="display-as-block">Describe what type of work you're looking for?</label>
+            <input type="text" name="summary-strategy-sentence4" id="summary-strategy-sentence4" value="" class="display-as-block" />
             
         </section>
         <section id="summary-of-qualifications">
             <h2 id="summary-of-qualifications-title">Summary of Qualifications</h2>
-            <label for="qualification1">Sentence 1</label>
-            <input type="text" name="qualification1," id="qualification1" value="Provide an example of how you are you manageable." />
-            <label for="qualification2">Sentence 2</label>
-            <input type="text" name="qualification2," id="qualification2" value="Give a description of your work consistency." />
-            <label for="qualification3">Sentence 3</label>
-            <input type="text" name="qualification3," id="qualification3" value="Describe why you are trainable." />
+            <label for="qualification1">In one sentence (of 10 words or less), provide an example of how you are you manageable.</label>
+            <input type="text" name="qualification1," id="qualification1" value="" />
+            <label for="qualification2">In one sentence (of 10 words or less), give a description of your work consistency.</label>
+            <input type="text" name="qualification2," id="qualification2" value="" />
+            <label for="qualification3">In one sentence (of 10 words or less), escribe why you are trainable.</label>
+            <input type="text" name="qualification3," id="qualification3" value="" />
         </section>
         <section id="relevant-skills">
             <h2 id="relevant-skills-title">Relevant Skills</h2>
-            <div>
+            <section id="communication">
+                <h3 id="communication-title">Communication</h3>
                 <label for="communication-example-what-skill">Example of what communcation skill you have.</label>
                 <input type="text" name="communication-example-1," id="communication-example-1" value="Provide one sentence of 'what' skill makes you a good communicator." />
-            </div>
-            <div>
                 <label for="communication-example-how-delivery">Example of how you successfully deliver your communication.</label>
                 <input type="text" name="communication-example-how-delivery," id="communication-example-how-delivery" value="Provide one sentence of 'how' you 'deliver' communication on a company team." />
-            </div>
-            <div>
                 <label for="communication-example-confirmation"></label>
                 <input type="text" name="communication-example-confirmation," id="communication-example-confirmation" value="Provide one sentence that 'confirms' your communication was effective." />
-            </div>
+            </section>
+            <section id="organization">
+                <h3 id="organization-title">Organization</h3>
+                <label for="follow-directions">FollowDirections</label>
+                <input type="text" name="follow-directions" id="follow-directions" />
+            </section>
+            <section id="problem-solving">
+                <h3 id="problem-solving-title">Problem Solving</h3>
+            </section>
         </section>
         <section id="work-history">
 
