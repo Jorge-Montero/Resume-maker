@@ -1,0 +1,10 @@
+#name-section {
+    text-align: center;
+   
+}
+#summary-statement {
+    width:auto;
+    height: 300px;
+    border-style: groove; 
+    border-color: black;  
+}
