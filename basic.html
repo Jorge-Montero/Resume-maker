@@ -140,32 +140,44 @@
             </div>
         </div>
         <div id="education"class="container">
-            <h3><!--make a drop down menu here(of grad / degree/certs) -->
-                <form name="ed-1" id="ed-1" action="/action_page.php">
-                Education <select name="ed-2" id="ed-2">
-                    <option value="1" selected="selected">
-                        Lorem ipsum
-                    </option>
-                    <option value="2" selected="selected">
-                        Lorem ipsum
-                    </option>
-                    <option value="3" selected="selected">
-                        Lorem ipsum
-                    </option>
-                    <option value="1" selected="selected">
-                        Lorem ipsum
-                    </option>
-                </select>
-            </h3>
+            <h3>
+                Education
+            </h3><!--make a drop down menu here(of grad / degree/certs) -->
+            <div class="dl">
+                <div class="dt"></div>
+                <form name="highest-level" id="highest-level" action="/action_page.php">
+                    Highest Level   
+                    <select name="ed-2" id="ed-2">
+                        <option value="1" selected="selected">
+                            Lorem ipsum
+                        </option>
+                        <option value="2" selected="selected">
+                            Lorem ipsum
+                        </option>
+                        <option value="3" selected="selected">
+                            Lorem ipsum
+                        </option>
+                        <option value="1" selected="selected">
+                            Lorem ipsum
+                        </option>
+                    </select>
                 </form>
-                
-                <ul>
-                    <li id="highest-level">lorem ipsum</li>
-                    <li id="graduation-date">lorem ipsum</li>
-                    <li id="school-name">lorem ipsum</li>
-                    <li id="city">lorem ipsum</li>
-                    <li id="state">lorem ipsum</li>
-                </ul>
+                <h4>
+                    Graduation Date
+                </h4>
+            </div>
+                    <input id="graduation-date" type="date"/>
+                    <div class="dl">
+                        <dt id="school-name">
+                            lorem ipsum
+                            <dd id="city">
+                                lorem ipsum
+                            </dd>
+                            <dd id="state">
+                                lorem ipsum
+                            </dd>
+                        </dt>
+                    </div>
             
         </div>
         <script src="src/basic.js"></script>
