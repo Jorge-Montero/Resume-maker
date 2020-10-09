@@ -19,35 +19,33 @@
 </head>
 <body>
     <div id="root">
-        <div class="card" id="top-input">
+        <div class="dl" id="top-input">
             <h3>
-                <div class="row">
-                    <div class="col-xs-2">
-                        <section id="first-name-input">
-                            <p>
+                <section id="first-name-input">
+                            <dt>
                                 Lorem
-                            </p>
+                            </dt>
                         </section>
                         <section id="last-name-input">
-                            <p id="last-name">
+                            <dt id="last-name">
                                 Ipsum
-                            </p>
+                            </dt>
                         </section>
                     </div>
                     <section id="city-input">
-                        <p id="city">
+                        <dd id="city">
                             San Ipsum
-                            </p>
+                        </dd>
                     </section>
                     <section id="state-input">
-                        <p id="state">
+                        <dd id="state">
                             LI
-                        </p>
+                        </dd>
                 </section>
                 <section id="email-input">
-                    <p id="email">
+                    <dd id="email">
                         lorem.ipsum@email.com
-                    </p>
+                    </dd>
                 </section>
             </h3>
         </div>
@@ -81,81 +79,85 @@
                     Relevant Skills
                 </p>
             </h2>     
-                <ul>
-                    <li id="communication">
+                <div class="dl">
+                    <dt id="communication">
                         Communication
-                    </li>
+                    </dt>
                         <ul>
-                            <li id="what-com"></li>
-                            <li id="how-com"></li>
-                            <li id="confirmation"></li>
-                        </ul>
-                    <li id="organization">
+                            <dd id="what-com">Lorem ipsum</dd>
+                            <dd id="how-com">Lorem ipsum</dd>
+                            <dd id="confirmation">Lorem ipsum</dd>
+                </div>
+                <div class="dl">
+                    <dt id="organization">
                         Organization
-                    </li>
+                    </dt>
                         <ul> 
-                            <li id="fallow-direction"></li> 
-                            <li id="built-trust"></li>
-                            <li id="work-independent"></li>
-                        </ul>
-                    <li id="problem-solving">
+                            <dd id="fallow-direction">Lorem ipsum</dd> 
+                            <dd id="built-trust">Lorem ipsum</dd>
+                            <dd id="work-independent">Lorem ipsum</dd>
+                </div>
+                <div class="dl">
+                    <dt id="problem-solving">
                         Problem-Solving
-                    </li>
+                    </dt>
                         <ul>
-                            <li id="communicate"></li>
-                            <li id="listen"></li>
-                            <li id="pursued-resolution"></li>
+                            <dd id="communicate">Lorem ipsum</dd>
+                            <dd id="listen">Lorem ipsum</dd>
+                            <dd id="pursued-resolution">Lorem ipsum</dd>
                         </ul>
                 
-                </ul>
+                </div>
         </div>
         <div class="card">
             <div id="work-history" class="article">
                 <h2>
                     Work History
                 </h2>
-                    <div class="row">
-                        <ul>
-                            <li>
-                                <p id="position">lorem ipsum1</p> 
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <p id="hire-to-fire">lorem ipsum2</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="row">
-                       <ul>
-                            <li>
-                                <p id="company">lorem ipsum3</p>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <p id="city">lorem ipsum4</p>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <p id="state">LI</p>
-                            </li>
-                        </ul>    
+                <div class="row">
+                    <div class="dl">
+                        <dt id="position">
+                            lorem ipsum1
+                                <dd id="hire-to-fire">
+                                    lorem ipsum2
+                                </dd>
+                        </dt>
                     </div>
                 </div>
-            </h1>
+                    <div class="row">
+                       <div class="dl">
+                            <dt id="company">
+                                lorem ipsum3
+                                    <dd id="city">
+                                        lorem ipsum4
+                                    </dd>
+                                    <dd id="state">
+                                        LI
+                                    </dd>
+                            </dt>
+                        </div>    
+                    </div>
+            </div>
         </div>
         <div id="education"class="container">
-            <h1>
-                Education
+            <h3>
+                <form name="ed-1" id="ed-1" action="/action_page.php">
+                Education <select name="ed-2" id="ed-2">
+                    <option value="" selected="selected">
+                        Lorem ipsum
+                    </option>
+                </select>
+            </h3>
+                </form>
                 <!--make a drop down menu here(of grad / degree/certs) -->
-                <p id="highest-level">lorem ipsum</p>
-                <p id="graduation-date">lorem ipsum</p>
-                <p id="school-name">lorem ipsum</p>
-                <p id="city">lorem ipsum</p>
-                <p id="state">lorem ipsum</p>
-            </h1>
+                <ul>
+                    <li id="highest-level">lorem ipsum</li>
+                    <li id="graduation-date">lorem ipsum</li>
+                    <li id="school-name">lorem ipsum</li>
+                    <li id="city">lorem ipsum</li>
+                    <li id="state">lorem ipsum</li>
+                </ul>
+            
         </div>
         <script src="src/basic.js"></script>
     </div>
