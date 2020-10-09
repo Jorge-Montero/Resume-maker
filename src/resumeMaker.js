@@ -4,7 +4,7 @@ const reducer = Redux.combineReducers({
     todos: () => "Redux working!!!"
 })
 
-const store = Rudex.createStore(reducer);
+const store = Redux.createStore(reducer);
 
 console.log(store.getState());
 
