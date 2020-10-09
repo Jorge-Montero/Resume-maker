@@ -6,5 +6,7 @@ const reducer = Redux.combineReducers({
 
 const store = Redux.createStore(reducer);
 
-console.log(store.getState());
+const answer = store.getState().todos;
+
+document.getElementById('title').innerHTML = answer;
 
