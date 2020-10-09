@@ -9,95 +9,154 @@
 </head>
 <body>
     <div id="root" class="container-fluid">
-        <h1 id="title">Resumer Maker</h1>
-        <h2 id="intake-form">Intake Form</h2>
+        <!-- NAMING CONVENTION: 1-word for(from) current ID + 1-word from parent ID -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 id="title" class="display-4">Resumer Maker</h1>
+                <h2 id="intake-form" class="lead">Intake Form</h2>
+            </div>
+        </div>
 
         <section id="user-information">
-            <h2 id="user-information-title">User Information</h2>
+            <h2 id="user-information-title">USER INFORMATION</h2>
             <div class="form-group">
-                <label id="first-name-label" for="first-name-input">First Name</label>
-                <input type="text" name="first-name" id="first-name" class="form-control" />
+                <label for="user-first-name">First Name</label>
+                <input type="text" name="user-first-name" id="user-first-name" class="form-control" />
             </div>
             <div class="form-group">
-                <label id="last-name-label" for="last-name-input">Last Name</label>
-                <input type="text" name="last-name" id="last-last" class="form-control" />
+                <label for="user-last-name">Last Name</label>
+                <input type="text" name="user-last-name" id="user-last-name" class="form-control" />
             </div>
             <div class="form-group">
-                <label for="state">State</label>
-                <input type="text" name="state" id="state" class="form-control" />
+                <label for="user-state">State</label>
+                <input type="text" name="user-state" id="user-state" class="form-control" />
             </div>
             <div class="form-group">
-                <label for="city-input">City</label>
-                <input type="text" name="city" id="city" class="form-control" />
+                <label for="user-city">City</label>
+                <input type="text" name="user-city" id="user-city" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="user-email">Email</label>
+                <input type="email" name="user-email" id="user-email" class="form-control" />
             </div>
         </section>
 
         <section id="summary-strategy">
-            <h2 id="summary-strategy-title">Summary Strategy</h2>
+            <h2 id="summary-strategy-title">SUMMARY STRATEGY</h2>
             <div class="form-group">
-                <label for="sentence1" class="display-as-block">What was your primary job role? ... how long? (1 sentence; 10 words or less)</label>
-                <textarea id="summary-strategy-sentence1" value="" class="form-control" rows="2" ></textarea>
-            </div>
-            <div class="form-group">
-                <label for="sentence2" class="display-as-block, width100">Describe your work personality? ... work attitude? (1 sentence; 10 words or less)</label>
-                <textarea id="summary-strategy-sentence2" value="" class="form-control" rows="2"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="sentence3" class="display-as-block">Descibe your work accolades? ... your awards? (1 sentence; 10 words or less)</label>
-                <textarea id="summary-strategy-sentence3" value="" class="form-control" rows="2"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="sentence4" class="display-as-block">Describe work you're looking for? ... type of team? (1 sentence; 10 words or less)</label>
-                <textarea value="" class="form-control" rows="2"></textarea>
+                <label for="summary-strategy-sentence1" class="display-as-block">What was your primary job role? ... how long? (1 sentence; 10 words or less)</label>
+                <textarea name="" id="" rows="2" class="form-control" value=""></textarea>
+                <label for="summary-strategy-sentence2" class="display-as-block, width100">Describe your work personality? ... work attitude? (1 sentence; 10 words or less)</label>
+                <textarea name="" id="" rows="2" class="form-control" value=""></textarea>
+                <label for="summary-strategy-sentence3" class="display-as-block">Descibe your work accolades? ... your awards? (1 sentence; 10 words or less)</label>
+                <textarea name="" id="" rows="2" class="form-control" value=""></textarea>
+                <label for="summary-strategy-4" class="display-as-block">Describe work you're looking for? ... type of team? (1 sentence; 10 words or less)</label>
+                <textarea name="" id="" rows="2" class="form-control" value=""></textarea>
             </div>
         </section>
         <section id="summary-of-qualifications">
-            <h2 id="summary-of-qualifications-title">Summary of Qualifications</h2>
+            <h2 id="summary-of-qualifications-title">SUMMARY OF QUALIFICATIONS</h2>
             <div class="form-group">
-                <label for="qualification1">Explain why you are manageable fit for us. (1 sentence; 10 words or less)</label>
-                <textarea value="" class="form-control" rows="2"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="qualification2">Explain how your consistency benefits us. (1 sentence; 10 words or less)</label>
-                <textarea value="" class="form-control" rows="2"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="qualification3">Explain why you can be easily trained by us. (1 sentence; 10 words or less)</label>
-                <textarea id="qualification3" value="" class="form-control" rows="2"></textarea>
+                <label for="qualifications-manageable">Explain why you are manageable fit for us. (1 sentence; 10 words or less)</label>
+                <textarea name="qualifications-manageable" id="qualifications-manageable" rows="2" class="form-control" value=""></textarea>
+                <label for="qualifications-consistent">Explain how your consistency benefits us. (1 sentence; 10 words or less)</label>
+                <textarea name="qualifications-consistent" id="qualifications-consistent" rows="2" class="form-control" value=""></textarea>
+                <label for="qualifications-trainable">Explain why you can be easily trained by us. (1 sentence; 10 words or less)</label>
+                <textarea name="qualifications-trainable" id="qualifications-trainable" rows="2" class="form-control" value=""></textarea>
             </div>
         </section>
         <section id="relevant-skills">
-            <h2 id="relevant-skills-title">Relevant Skills</h2>
+            <h2 id="relevant-skills-title">RELEVANT SKILLS</h2>
             <!-- NOTE: convert these later into a drop-down menu that will formulate the sentences easily for the use. -->
             <section id="communication">
                 <h3 id="communication-title">Communication</h3>
                 <div class="form-group">
-                    <label for="communication-example-what-skill">List communcation skills you confidently posses? (1 sentence; 10 words or less)</label>
-                    <textarea value="Provide one sentence of 'what' skill makes you a good communicator." class="form-control" rows="2"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="communication-example-how-delivery">How do you deliver communication on teams? (1 sentence; 10 words or less)</label>
-                    <textarea value="" class="form-control" rows="2"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="communication-example-confirmation">How is your communication confirmed effective? (1 sentence; 10 words or less)</label>
-                    <textarea value="" class="form-control" rows="2"></textarea>
+                    <label for="communication-skill">List communcation skills you confidently posses? (1 sentence; 10 words or less)</label>
+                    <textarea name="" id="" rows="2" class="form-control" value=""></textarea>
+                    <label for="communication-delivery">How do you deliver communication on teams? (1 sentence; 10 words or less)</label>
+                    <textarea name="" id="" rows="2" class="form-control" value=""></textarea>
+                    <label for="communication-confirmation">How is your communication confirmed effective? (1 sentence; 10 words or less)</label>
+                    <textarea name="" id="" rows="2" class="form-control" value=""></textarea>
                 </div>
             </section>
             <section id="organization">
                 <h3 id="organization-title">Organization</h3>
-                <label for="follow-directions">FollowDirections</label>
-                <input type="text" name="follow-directions" id="follow-directions" />
+                <div class="form-group">
+                    <label for="organization-follow">Give an example of when you followed directions. (1 sentence; 10 words or less)</label>
+                    <textarea name="organization-follow" id="organization-follow" rows="2" class="form-control" value=""></textarea>
+                    <label for="organization-trustworthy">Give an example of when you built trust. (1 sentence; 10 words or less)</label>
+                    <textarea name="organization-trustworthy" id="organization-trustworthy" rows="2" class="form-control" value=""></textarea>
+                    <label for="organization-independent">Give an example of when you worked independently. (1 sentence; 10 words or less)</label>
+                    <textarea name="organization-independent" id="organization-independent" rows="2" class="form-control" value=""></textarea>
+                </div>
             </section>
             <section id="problem-solving">
                 <h3 id="problem-solving-title">Problem Solving</h3>
+                <div class="form-group">
+                    <label for="organization-solver">Explain how you communicate to solve problems. (1 sentence; 10 words or less)</label>
+                    <textarea name="organization-solver" id="organization-solver" rows="2" class="form-control" value=""></textarea>
+                    <label for="organization-">Explain how you listen to solve problems. (1 sentence; 10 words or less)</label>
+                    <textarea name="organization-" id="organization-" rows="2" class="form-control" value=""></textarea>
+                    <label for="organization-resolution">Explain how you pursue resolutions quickly. (1 sentence; 10 words or less)</label>
+                    <textarea name="organization-" id="organization-" rows="2" class="form-control" value=""></textarea>
+                </div>
             </section>
         </section>
         <section id="work-history">
-
+            <section id="employers">
+                <h2 id="employers-title">WORK HISTORY</h2>
+                <div class="form-group">
+                    <h3 id="employer1">Employer 1</h3>
+                    <label for="employer1-position">Position</label>
+                    <input type="text" name="employer1-position" id="employer1-position" class="form-control" value="" />
+                    <label for="employer1-date-start">Start Date</label>
+                    <input type="date" name="employer1-date-start" id="employer1-date-start" class="form-control" value="" />
+                    <label for="employer1-date-end">End Date</label>
+                    <input type="date" name="employer1-date-end" id="employer1-date-end" class="form-control" value="" />
+                </div>
+            </section>
         </section>
         <section id="education">
-
+            <h2 id="education-title">EDUCATION</h2>
+            <section id="high-school">
+                <div class="form-group">
+                    <h3 id="high-school-title">High School Diploma</h3>
+                    <label for="high-school-name">High School Name</label>
+                    <input type="text" name="high-school-name" id="high-school-name" class="form-control" value="" />
+                    <label for="high-school-graduation">Graduation Date</label>
+                    <input type="date" name="high-school-graduation" id="high-school-graduation" class="form-control" value="" />
+                    <label for="high-school-city">City</label>
+                    <input type="text" name="high-school-city" id="high-school-city" class="form-control" value="" />
+                    <label for="high-school-state">State</label>
+                    <input type="text" name="high-school-state" id="high-school-state" class="form-control" value="" />
+                </div>
+            </section>
+            <section id="college">
+                <div class="form-group">
+                    <h3 id="college-title">Associate Degree</h3>
+                    <label for="college-name">College Name</label>
+                    <input type="text" name="college-name" id="college-name" class="form-control" value="" />
+                    <label for="college-graduation">Graduation Date</label>
+                    <input type="date" name="college-graduation" id="college-graduation" class="form-control" value="" />
+                    <label for="college-city">City</label>
+                    <input type="text" name="college-city" id="college-city" class="form-control" value="" />
+                    <label for="college-state">State</label>
+                    <input type="text" name="college-state" id="college-state" class="form-control" value="" />
+                </div>
+            </section>
+            <section id="university">
+                <div class="form-group">
+                    <h3 id="university-title">Bachelors Degree</h3>
+                    <label for="university-name">University Name</label>
+                    <input type="text" name="university-name" id="university-name" class="form-control" value="" />
+                    <label for="university-graduation">Graduation Date</label>
+                    <input type="date" name="university-graduation" id="university-graduation" class="form-control" value="" />
+                    <label for="university-city">City</label>
+                    <input type="text" name="university-city" id="university-city" class="form-control" value="" />
+                    <label for="university-state">State</label>
+                    <input type="text" name="university-state" id="university-state" class="form-control" value="" />
+                </div>
+            </section>
         </section>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
