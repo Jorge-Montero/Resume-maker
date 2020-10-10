@@ -9,38 +9,38 @@
 
 // (4) dispatch( )  <<--- action
 
-const reducer = (state, action) => {
-    if (action.type === 'ATTACK') {
-        return action.payload; // latent
-    }
-    if (action.type === 'GREENATTACK') {
-        return action.payload(); // real-time
-    }
+// const reducer = (state, action) => {
+//     if (action.type === 'ATTACK') {
+//         return action.payload; // latent
+//     }
+//     if (action.type === 'GREENATTACK') {
+//         return action.payload(); // real-time
+//     }
 
-    return state;
-}
+//     return state;
+// }
 
-// (1)
-const store = Redux.createStore(reducer, "Store starts:  at Peace");
+// // (1)
+// const store = Redux.createStore(reducer, "Store starts:  at Peace");
 
-// (2) reducer was moved above store
+// // (2) reducer was moved above store
 
-// (3)
-store.subscribe( () => console.log("Store is now: ", store.getState() ));
+// // (3)
+// store.subscribe( () => console.log("Store is now: ", store.getState() ));
 
-// NOT part of this app --- just check initial state
-console.log(store.getState());
+// // NOT part of this app --- just check initial state
+// console.log(store.getState());
 
-// (4)
-store.dispatch({
-    type: 'ATTACK',
-    payload: "sending Iron Man" // latent
-})
+// // (4)
+// store.dispatch({
+//     type: 'ATTACK',
+//     payload: "sending Iron Man" // latent
+// })
 
-store.dispatch({
-    type: 'GREENATTACK',
-    payload: () => "sending Hulk" // real-time
-})
+// store.dispatch({
+//     type: 'GREENATTACK',
+//     payload: () => "sending Hulk" // real-time
+// })
 
 
 // Redux Analogy below
