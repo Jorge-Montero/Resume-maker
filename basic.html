@@ -19,43 +19,47 @@
 </head>
 <body>
     <div id="root">
-        <div class="dl" id="top-input">
-            <h3>
-                <section id="first-name-input">
-                            <dt>
-                                Lorem
-                            </dt>
-                        </section>
-                        <section id="last-name-input">
-                            <dt id="last-name">
-                                Ipsum
-                            </dt>
-                        </section>
-                    </div>
-                    <section id="city-input">
-                        <dd id="city">
-                            San Ipsum
-                        </dd>
+        <div class="container">
+            <div class="dl" id="top-input">
+                <h3>
+                    <section id="first-name-input">
+                        <dt>
+                            Lorem
+                        </dt>
                     </section>
-                    <section id="state-input">
-                        <dd id="state">
-                            LI
-                        </dd>
+                    <section id="last-name-input">
+                        <dt id="last-name">
+                            Ipsum
+                        </dt>
+                    </section>
+                </h3>
+                <section id="state-input">
+                    <dd id="state">
+                        LI 
+                    </dd>
+                </section>
+                <section id="city-input">
+                    <dd id="city">
+                        Lorem city Ipsum
+                    </dd>
                 </section>
                 <section id="email-input">
                     <dd id="email">
                         lorem.ipsum@email.com
                     </dd>
                 </section>
-            </h3>
+            </div>
         </div>
     </div>
         <div id="summary-statement"class="container">
             <h2>
-                Summary Statement 
+                Summary
+                Statement 
             </h2>
                 <ul>
-                    <li id="what-did"></li>
+                    <li id="what-did">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    </li>
                     <li id="personality"></li>
                     <li id="accolades"></li>
                     <li id="looking-for"></li>
@@ -68,7 +72,9 @@
                 </p>
             </h2>
                 <ul>
-                    <li id="manageable"></li>
+                    <li id="manageable">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    </li>
                     <li id="work-consistancy"></li>
                     <li id="trainable"></li>
                 </ul>
@@ -109,65 +115,91 @@
                 
                 </div>
         </div>
-        <div class="card">
+        <div class="container">
             <div id="work-history" class="article">
                 <h2>
                     Work History
                 </h2>
-                <div class="row">
-                    <div class="dl">
-                        <dt id="position">
-                            lorem ipsum1
-                                <dd id="hire-to-fire">
-                                    lorem ipsum2
-                                </dd>
-                        </dt>
-                    </div>
+                <div class="dl">
+                    <dt id="position">
+                        lorem ipsum
+                            <dd id="hire-to-fire">
+                                <input id="work-date-s" type="date"/>
+                                    Start
+                                <input id="work-date-f" type="date"/>
+                                    End
+                            </dd>
+                    </dt>
                 </div>
-                    <div class="row">
-                       <div class="dl">
-                            <dt id="company">
-                                lorem ipsum3
+                <!-- [saw was off index need to talk about]
+                <div class="dl">
+                    <dt id="company">
+                        lorem ipsum3
+                            <dd id="city">
+                                lorem ipsum4
+                            </dd>
+                            <dd id="state">
+                                LI
+                            </dd>
+                    </dt>
+                </div>   
+            --> 
+            </div>
+        </div>
+        <div id="education"class="container">
+            <h3>
+                Education
+            </h3>
+            <!--  **???***make a drop down menu here(of grad / degree/certs) 
+                    having issues selecting drop down options-->
+            
+                <form name="highest-level" id="highest-level" action="/action_page.php">
+                    Highest Level   
+                    <select name="ed-2" id="ed-2">
+                        <option value="1" selected="selected">
+                            <div class="dl">
+                                <dt id="school-name">
+                                    Lorem Ipsum
+                                    <input id="graduation-date" type="date"/>
+                                        Graduation
                                     <dd id="city">
-                                        lorem ipsum4
+                                        lorem city ipsum
                                     </dd>
                                     <dd id="state">
                                         LI
                                     </dd>
-                            </dt>
-                        </div>    
-                    </div>
-            </div>
-        </div>
-        <div id="education"class="container">
-            <h3><!--make a drop down menu here(of grad / degree/certs) -->
-                <form name="ed-1" id="ed-1" action="/action_page.php">
-                Education <select name="ed-2" id="ed-2">
-                    <option value="1" selected="selected">
-                        Lorem ipsum
-                    </option>
-                    <option value="2" selected="selected">
-                        Lorem ipsum
-                    </option>
-                    <option value="3" selected="selected">
-                        Lorem ipsum
-                    </option>
-                    <option value="1" selected="selected">
-                        Lorem ipsum
-                    </option>
-                </select>
-            </h3>
+                                </dt>
+                            </div>
+                        </option>
+      
+                        <option value="2" selected="selected">
+                            Lorem ipsum
+                        </option>
+                        <option value="3" selected="selected">
+                            Lorem ipsum
+                        </option>
+                        <option value="1" selected="selected">
+                            Lorem ipsum
+                        </option>
+                    </select>
                 </form>
-                
-                <ul>
-                    <li id="highest-level">lorem ipsum</li>
-                    <li id="graduation-date">lorem ipsum</li>
-                    <li id="school-name">lorem ipsum</li>
-                    <li id="city">lorem ipsum</li>
-                    <li id="state">lorem ipsum</li>
-                </ul>
-            
-        </div>
+            </div>
+      </div>
+            <!-- possible option of format need to discuss-->
+            <div class="dl">
+                <dt id="school-name">
+                    Lorem Ipsum
+                    <input  type="date"/>
+                        Graduation
+                    <dd id="city">
+                        lorem city ipsum 
+                    </dd>
+                    <dd id="state">
+                        LI
+                    </dd>
+                </dt>
+            </div>
+        
         <script src="src/basic.js"></script>
     </div>
 </body>
