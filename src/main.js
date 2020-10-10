@@ -1,6 +1,6 @@
 /* use react-redux with this resume app */
 
-// START --- Redux Tutorial Example
+// START --- Redux Tutorial Example-1
 
 // Think of redux store as a James Bond mission, where CONSTANT mission UPDATES are REQUIRED
 // step (1) === store  <<<--- reducer + state // and state is the "status" of each step
@@ -31,6 +31,10 @@
 //     payload: "Iron Man"
 // })
 
-// END --- Redux Tutorial Example
+// END --- Redux Tutorial Example-1
+
+// START --- Redux Tutorial Example-2
+
+// END --- Redux Tutorial Example-2
 
 
