@@ -39,7 +39,8 @@
                 <label for="user-email">Email</label>
                 <input type="email" name="user-email" id="user-email" class="form-control" />
             </div>
-            <button type="submit" id="submitUserInfo" class="btn btn-primary">Submit</button>
+            <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
+            <button type="submit" id="submitUserInfo" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
         </section>
         <section id="summary-strategy">
             <h2 id="summary-strategy-title">SUMMARY STRATEGY</h2>
@@ -53,7 +54,8 @@
                 <label for="strategy-work" class="display-as-block">Describe work you're looking for? ... type of team? (1 sentence; 10 words or less)</label>
                 <textarea name="strategy-work" id="strategy-work" rows="2" class="form-control" value=""></textarea>
             </div>
-            <button type="submit" id="submitStrategy" class="btn btn-primary">Submit</button>
+            <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
+            <button type="submit" id="submitStrategy" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
         </section>
         <section id="summary-of-qualifications">
             <h2 id="summary-of-qualifications-title">SUMMARY OF QUALIFICATIONS</h2>
@@ -65,7 +67,8 @@
                 <label for="qualifications-trainable">Explain why you can be easily trained by us. (1 sentence; 10 words or less)</label>
                 <textarea name="qualifications-trainable" id="qualifications-trainable" rows="2" class="form-control" value=""></textarea>
             </div>
-            <button type="submit" id="submitQualifications" class="btn btn-primary">Submit</button>
+            <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
+            <button type="submit" id="submitQualifications" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
         </section>
         <section id="relevant-skills">
             <h2 id="relevant-skills-title">RELEVANT SKILLS</h2>
@@ -80,6 +83,8 @@
                     <label for="communication-confirmation">How is your communication confirmed effective? (1 sentence; 10 words or less)</label>
                     <textarea name="communication-confirmation" id="communication-confirmation" rows="2" class="form-control" value=""></textarea>
                 </div>
+                <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
+                <button type="submit" id="submitCommunication" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
             </section>
             <section id="organization">
                 <h3 id="organization-title">Organization</h3>
@@ -91,6 +96,8 @@
                     <label for="organization-independent">Give an example of when you worked independently. (1 sentence; 10 words or less)</label>
                     <textarea name="organization-independent" id="organization-independent" rows="2" class="form-control" value=""></textarea>
                 </div>
+                <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
+                <button type="submit" id="submitOrganization" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
             </section>
             <section id="problem-solving">
                 <h3 id="problem-solving-title">Problem Solving</h3>
@@ -102,6 +109,8 @@
                     <label for="solving-resolver">Explain how you pursue resolutions quickly. (1 sentence; 10 words or less)</label>
                     <textarea name="solving-resolver" id="solving-resolver" rows="2" class="form-control" value=""></textarea>
                 </div>
+                <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
+                <button type="submit" id="submitSolving" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
             </section>
         </section>
         <section id="work-history">
@@ -116,6 +125,8 @@
                     <label for="employer1-date-end">End Date</label>
                     <input type="date" name="employer1-date-end" id="employer1-date-end" class="form-control" value="" />
                 </div>
+                <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
+                <button type="submit" id="submitEmployer1" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
             </section>
         </section>
         <section id="education">
@@ -132,6 +143,8 @@
                     <label for="high-school-state">State</label>
                     <input type="text" name="high-school-state" id="high-school-state" class="form-control" value="" />
                 </div>
+                <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
+                <button type="submit" id="submitHighSchool" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
             </section>
             <section id="college">
                 <div class="form-group">
@@ -145,6 +158,8 @@
                     <label for="college-state">State</label>
                     <input type="text" name="college-state" id="college-state" class="form-control" value="" />
                 </div>
+                <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
+                <button type="submit" id="submitHighSchool" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
             </section>
             <section id="university">
                 <div class="form-group">
@@ -158,8 +173,11 @@
                     <label for="university-state">State</label>
                     <input type="text" name="university-state" id="university-state" class="form-control" value="" />
                 </div>
+                <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
+                <button type="submit" id="submitHighSchool" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
             </section>
         </section>
+        <button type="submit" id="submitResume" class="btn btn-primary btn-lg btn-block">Submit Resume</button>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
