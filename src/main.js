@@ -153,20 +153,31 @@ store.subscribe(() => {
     console.log(store.getState()); // output this everytime ANY 'dispatch' is sent
 });
 
-document.getElementById('submitUserInfo').onclick = () => {
-    store.dispatch({
-        type: "submitUserInfo"
-    });
-};
-document.getElementById('submitStrategy').onclick = () => {
-    store.dispatch({
-        type: "submitStrategy"
-    });
-};
-document.getElementById('submitQualifications').onclick = () => {
-    store.dispatch({
-        type: "submitQualifications"
-    });
+// document.getElementById('submitUserInfo').onclick = () => {
+//     store.dispatch({
+//         type: "submitUserInfo"
+//     });
+// };
+// document.getElementById('submitStrategy').onclick = () => {
+//     store.dispatch({
+//         type: "submitStrategy"
+//     });
+// };
+// document.getElementById('submitQualifications').onclick = () => {
+//     store.dispatch({
+//         type: "submitQualifications"
+//     });
+// };
+
+// Scroll to bottom so user can complete task
+let scrollingElement = (document.scrollingElement || document.body);
+let scrollToBottom = () => {
+    scrollingElement.scrollTop = scrollingElement.scrollHeight;
 };
 
-
+// below requires 'full' JQuery
+// let scrollSmoothToBottom = (id) => {
+//     $(scrollingElement).animate({
+//         scrollTop: document.body.scrollHeight
+//     }, 500);
+// };

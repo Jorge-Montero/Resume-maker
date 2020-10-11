@@ -10,15 +10,15 @@
 <body>
     <div id="root" class="container-fluid">
         <!-- NAMING CONVENTION: 1-word for(from) current ID + 1-word from parent ID -->
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid bg-dark text-white">
             <div class="container">
                 <h1 id="title" class="display-4">Resume Maker</h1>
-                <h2 id="intake-form" class="lead">Intake Form</h2>
+                <h2 id="intake-form" class="lead text-right">press &nbsp;Submit&nbsp; when done</h2>
             </div>
         </div>
 
         <section id="user-information">
-            <h2 id="user-information-title">USER INFORMATION</h2>
+            <h2 id="user-information-title" class="text-center">User Information</h2>
             <div class="form-group">
                 <label for="user-first-name">First Name</label>
                 <input type="text" name="user-first-name" id="user-first-name" class="form-control" />
@@ -40,10 +40,10 @@
                 <input type="email" name="user-email" id="user-email" class="form-control" />
             </div>
             <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
-            <button type="submit" id="submitUserInfo" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
+            <button type="submit" id="submitUserInfo" class="btn btn-secondary btn-lg btn-block" onClick="scrollToBottom()">Update</button>
         </section>
         <section id="summary-strategy">
-            <h2 id="summary-strategy-title">SUMMARY STRATEGY</h2>
+            <h2 id="summary-strategy-title" class="text-center">Summary Strategy</h2>
             <div class="form-group">
                 <label for="strategy-role" class="display-as-block">What was your primary job role? ... how long? (1 sentence; 10 words or less)</label>
                 <textarea name="strategy-role" id="strategy-role" rows="2" class="form-control" value=""></textarea>
@@ -55,10 +55,10 @@
                 <textarea name="strategy-work" id="strategy-work" rows="2" class="form-control" value=""></textarea>
             </div>
             <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
-            <button type="submit" id="submitStrategy" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
+            <button type="submit" id="submitStrategy" class="btn btn-secondary btn-lg btn-block"  onClick="scrollToBottom()">Update</button>
         </section>
         <section id="summary-of-qualifications">
-            <h2 id="summary-of-qualifications-title">SUMMARY OF QUALIFICATIONS</h2>
+            <h2 id="summary-of-qualifications-title" class="text-center">Summary Of Qualifications</h2>
             <div class="form-group">
                 <label for="qualifications-manageable">Explain why you are manageable fit for us. (1 sentence; 10 words or less)</label>
                 <textarea name="qualifications-manageable" id="qualifications-manageable" rows="2" class="form-control" value=""></textarea>
@@ -68,13 +68,13 @@
                 <textarea name="qualifications-trainable" id="qualifications-trainable" rows="2" class="form-control" value=""></textarea>
             </div>
             <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
-            <button type="submit" id="submitQualifications" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
+            <button type="submit" id="submitQualifications" class="btn btn-secondary btn-lg btn-block" onClick="scrollToBottom()">Update</button>
         </section>
         <section id="relevant-skills">
-            <h2 id="relevant-skills-title">RELEVANT SKILLS</h2>
+            <h2 id="relevant-skills-title" class="text-center">Relevant Skills</h2>
             <!-- NOTE: convert these later into a drop-down menu that will formulate the sentences easily for the use. -->
             <section id="communication">
-                <h3 id="communication-title">Communication</h3>
+                <h3 id="communication-title" class="text-center">Communication</h3>
                 <div class="form-group">
                     <label for="communication-skill">List communcation skills you confidently posses? (1 sentence; 10 words or less)</label>
                     <textarea name="communication-skill" id="communication-skill" rows="2" class="form-control" value=""></textarea>
@@ -84,10 +84,10 @@
                     <textarea name="communication-confirmation" id="communication-confirmation" rows="2" class="form-control" value=""></textarea>
                 </div>
                 <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
-                <button type="submit" id="submitCommunication" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
+                <button type="submit" id="submitCommunication" class="btn btn-secondary btn-lg btn-block" onClick="scrollToBottom()">Update</button>
             </section>
             <section id="organization">
-                <h3 id="organization-title">Organization</h3>
+                <h3 id="organization-title" class="text-center">Organization</h3>
                 <div class="form-group">
                     <label for="organization-follow">Give an example of when you followed directions. (1 sentence; 10 words or less)</label>
                     <textarea name="organization-follow" id="organization-follow" rows="2" class="form-control" value=""></textarea>
@@ -97,10 +97,10 @@
                     <textarea name="organization-independent" id="organization-independent" rows="2" class="form-control" value=""></textarea>
                 </div>
                 <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
-                <button type="submit" id="submitOrganization" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
+                <button type="submit" id="submitOrganization" class="btn btn-secondary btn-lg btn-block" onClick="scrollToBottom()">Update</button>
             </section>
             <section id="problem-solving">
-                <h3 id="problem-solving-title">Problem Solving</h3>
+                <h3 id="problem-solving-title" class="text-center">Problem Solving</h3>
                 <div class="form-group">
                     <label for="solving-communicator">Explain how you communicate to solve problems. (1 sentence; 10 words or less)</label>
                     <textarea name="solving-communicator" id="solving-communicator" rows="2" class="form-control" value=""></textarea>
@@ -110,12 +110,12 @@
                     <textarea name="solving-resolver" id="solving-resolver" rows="2" class="form-control" value=""></textarea>
                 </div>
                 <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
-                <button type="submit" id="submitSolving" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
+                <button type="submit" id="submitSolving" class="btn btn-secondary btn-lg btn-block" onClick="scrollToBottom()">Update</button>
             </section>
         </section>
         <section id="work-history">
             <section id="employers">
-                <h2 id="employers-title">WORK HISTORY</h2>
+                <h2 id="employers-title" class="text-center">Work History</h2>
                 <div class="form-group">
                     <h3 id="employer1">Employer 1</h3>
                     <label for="employer1-position">Position</label>
@@ -126,14 +126,14 @@
                     <input type="date" name="employer1-date-end" id="employer1-date-end" class="form-control" value="" />
                 </div>
                 <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
-                <button type="submit" id="submitEmployer1" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
+                <button type="submit" id="submitEmployer1" class="btn btn-secondary btn-lg btn-block" onClick="scrollToBottom()">Update</button>
             </section>
         </section>
         <section id="education">
-            <h2 id="education-title">EDUCATION</h2>
+            <h2 id="education-title" class="text-center">Education</h2>
             <section id="high-school">
                 <div class="form-group">
-                    <h3 id="high-school-title">High School Diploma</h3>
+                    <h3 id="high-school-title" class="text-center">High School Diploma</h3>
                     <label for="high-school-name">High School Name</label>
                     <input type="text" name="high-school-name" id="high-school-name" class="form-control" value="" />
                     <label for="high-school-graduation">Graduation Date</label>
@@ -144,11 +144,11 @@
                     <input type="text" name="high-school-state" id="high-school-state" class="form-control" value="" />
                 </div>
                 <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
-                <button type="submit" id="submitHighSchool" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
+                <button type="submit" id="submitHighSchool" class="btn btn-secondary btn-lg btn-block" onClick="scrollToBottom()">Update</button>
             </section>
             <section id="college">
                 <div class="form-group">
-                    <h3 id="college-title">Associate Degree</h3>
+                    <h3 id="college-title" class="text-center">Associate Degree</h3>
                     <label for="college-name">College Name</label>
                     <input type="text" name="college-name" id="college-name" class="form-control" value="" />
                     <label for="college-graduation">Graduation Date</label>
@@ -159,11 +159,11 @@
                     <input type="text" name="college-state" id="college-state" class="form-control" value="" />
                 </div>
                 <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
-                <button type="submit" id="submitHighSchool" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
+                <button type="submit" id="submitHighSchool" class="btn btn-secondary btn-lg btn-block" onClick="scrollToBottom()">Update</button>
             </section>
             <section id="university">
                 <div class="form-group">
-                    <h3 id="university-title">Bachelors Degree</h3>
+                    <h3 id="university-title" class="text-center">Bachelors Degree</h3>
                     <label for="university-name">University Name</label>
                     <input type="text" name="university-name" id="university-name" class="form-control" value="" />
                     <label for="university-graduation">Graduation Date</label>
@@ -174,10 +174,10 @@
                     <input type="text" name="university-state" id="university-state" class="form-control" value="" />
                 </div>
                 <small class="text-muted">If finished, use 'Submit' button at bottom.</small>
-                <button type="submit" id="submitHighSchool" class="btn btn-secondary btn-lg btn-block" disabled><del>Update</del></button>
+                <button type="submit" id="submitHighSchool" class="btn btn-secondary btn-lg btn-block" onClick="scrollToBottom()">Update</button>
             </section>
         </section>
-        <button type="submit" id="submitResume" class="btn btn-primary btn-lg btn-block">Submit Resume</button>
+        <button type="submit" id="submitResume" class="btn btn-success btn-lg btn-block">Submit Resume</button>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
