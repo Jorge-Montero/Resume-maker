@@ -58,36 +58,36 @@ const reducer = (state, action) => {
         Trainable: ""
     }
 
-    if (action.type === 'submitUserInfo') {
-        const userFirstName = document.getElementById('user-first-name').value;
-        const userLastName = document.getElementById('user-last-name').value;
-        const userState = document.getElementById('user-state').value;
-        const userCity = document.getElementById('user-city').value;
-        const userEmail = document.getElementById('user-email').value;
-        userInfo.userFirstName = userFirstName;
-        userInfo.userLastName = userLastName;
-        userInfo.state = userState;
-        userInfo.city = userCity;
-        userInfo.email = userEmail;
-    }
-    if (action.type === 'submitStrategy') {
-        const strategyRole = document.getElementById('strategy-role').value;
-        userStrategy.role = strategyRole;
-        const strategyPersonality = document.getElementById('strategy-personality').value;
-        userStrategy.personality = strategyPersonality;
-        const strategyAccolades = document.getElementById('strategy-accolades').value;
-        userStrategy.accolades = strategyAccolades;
-        const strategyWork = document.getElementById('strategy-work').value;
-        userStrategy.work = strategyWork;
-    }
-    if (action.type === 'submitQualifications') {
-        const qualificationsManageable = document.getElementById('qualifications-manageable').value;
-        userQualifications.manageable = qualificationsManageable;
-        const qualificationsConsistent = document.getElementById('qualifications-consistent').value;
-        userQualifications.consistent = qualificationsConsistent;
-        const qualificationsTrainable = document.getElementById('qualifications-trainable').value;
-        userQualifications.trainable = qualificationsTrainable;
-    }
+    // if (action.type === 'submitUserInfo') {
+    //     const userFirstName = document.getElementById('user-first-name').value;
+    //     const userLastName = document.getElementById('user-last-name').value;
+    //     const userState = document.getElementById('user-state').value;
+    //     const userCity = document.getElementById('user-city').value;
+    //     const userEmail = document.getElementById('user-email').value;
+    //     userInfo.userFirstName = userFirstName;
+    //     userInfo.userLastName = userLastName;
+    //     userInfo.state = userState;
+    //     userInfo.city = userCity;
+    //     userInfo.email = userEmail;
+    // }
+    // if (action.type === 'submitStrategy') {
+    //     const strategyRole = document.getElementById('strategy-role').value;
+    //     userStrategy.role = strategyRole;
+    //     const strategyPersonality = document.getElementById('strategy-personality').value;
+    //     userStrategy.personality = strategyPersonality;
+    //     const strategyAccolades = document.getElementById('strategy-accolades').value;
+    //     userStrategy.accolades = strategyAccolades;
+    //     const strategyWork = document.getElementById('strategy-work').value;
+    //     userStrategy.work = strategyWork;
+    // }
+    // if (action.type === 'submitQualifications') {
+    //     const qualificationsManageable = document.getElementById('qualifications-manageable').value;
+    //     userQualifications.manageable = qualificationsManageable;
+    //     const qualificationsConsistent = document.getElementById('qualifications-consistent').value;
+    //     userQualifications.consistent = qualificationsConsistent;
+    //     const qualificationsTrainable = document.getElementById('qualifications-trainable').value;
+    //     userQualifications.trainable = qualificationsTrainable;
+    // }
 
     // if (action.type === 'submitSkillsCommunication') {
     //     const ? = document.getElementById('').value;
@@ -109,6 +109,36 @@ const reducer = (state, action) => {
     //     const ? = document.getElementById('').value;
     //     #.? = ?;
     // }
+
+    if (action.type === 'submitResume') {
+        const userFirstName = document.getElementById('user-first-name').value;
+        const userLastName = document.getElementById('user-last-name').value;
+        const userState = document.getElementById('user-state').value;
+        const userCity = document.getElementById('user-city').value;
+        const userEmail = document.getElementById('user-email').value;
+        userInfo.userFirstName = userFirstName;
+        userInfo.userLastName = userLastName;
+        userInfo.state = userState;
+        userInfo.city = userCity;
+        userInfo.email = userEmail;
+
+        const strategyRole = document.getElementById('strategy-role').value;
+        userStrategy.role = strategyRole;
+        const strategyPersonality = document.getElementById('strategy-personality').value;
+        userStrategy.personality = strategyPersonality;
+        const strategyAccolades = document.getElementById('strategy-accolades').value;
+        userStrategy.accolades = strategyAccolades;
+        const strategyWork = document.getElementById('strategy-work').value;
+        userStrategy.work = strategyWork;
+
+        const qualificationsManageable = document.getElementById('qualifications-manageable').value;
+        const qualificationsConsistent = document.getElementById('qualifications-consistent').value;
+        const qualificationsTrainable = document.getElementById('qualifications-trainable').value;
+        userQualifications.manageable = qualificationsManageable;
+        userQualifications.consistent = qualificationsConsistent;
+        userQualifications.trainable = qualificationsTrainable;
+    }
+
 
     currentState = {
         userInfo: userInfo,
@@ -168,6 +198,11 @@ store.subscribe(() => {
 //         type: "submitQualifications"
 //     });
 // };
+document.getElementById('submitResume').onclick = () => {
+    store.dispatch({
+        type: "submitResume"
+    });
+};
 
 // Scroll to bottom so user can complete task
 let scrollingElement = (document.scrollingElement || document.body);
