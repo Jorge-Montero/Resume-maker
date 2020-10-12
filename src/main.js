@@ -57,54 +57,45 @@ const reducer = (state, action) => {
         Consistent: "",
         Trainable: ""
     }
+    let userSkillsCommunication = {
+        Skill: "",
+        Delivery: "",
+        Confirmation: ""
+    }
+    let userSkillsOrganization = {
+        Follow: "",
+        Trustworthy: "",
+        Independent: ""
+    }
+    let userSkillsSolving = {
+        Communicator: "",
+        Explainer: "",
+        Resolver: ""
+    }
+    let employer1 = {
+        Position: "",
+        Start: "",
+        End:""
+    }
+    let educationHighSchool = {
+        Name: "",
+        Graduation: "",
+        City: "",
+        State: ""
+    }
+    let educationCollege = {
+        Name: "",
+        Graduation: "",
+        City: "",
+        State: ""
+    }
+    let educationUniversity = {
+        Name: "",
+        Graduation: "",
+        City: "",
+        State: ""
+    }
 
-    // if (action.type === 'submitUserInfo') {
-    //     const userFirstName = document.getElementById('user-first-name').value;
-    //     const userLastName = document.getElementById('user-last-name').value;
-    //     const userState = document.getElementById('user-state').value;
-    //     const userCity = document.getElementById('user-city').value;
-    //     const userEmail = document.getElementById('user-email').value;
-    //     userInfo.userFirstName = userFirstName;
-    //     userInfo.userLastName = userLastName;
-    //     userInfo.state = userState;
-    //     userInfo.city = userCity;
-    //     userInfo.email = userEmail;
-    // }
-    // if (action.type === 'submitStrategy') {
-    //     const strategyRole = document.getElementById('strategy-role').value;
-    //     userStrategy.role = strategyRole;
-    //     const strategyPersonality = document.getElementById('strategy-personality').value;
-    //     userStrategy.personality = strategyPersonality;
-    //     const strategyAccolades = document.getElementById('strategy-accolades').value;
-    //     userStrategy.accolades = strategyAccolades;
-    //     const strategyWork = document.getElementById('strategy-work').value;
-    //     userStrategy.work = strategyWork;
-    // }
-    // if (action.type === 'submitQualifications') {
-    //     const qualificationsManageable = document.getElementById('qualifications-manageable').value;
-    //     userQualifications.manageable = qualificationsManageable;
-    //     const qualificationsConsistent = document.getElementById('qualifications-consistent').value;
-    //     userQualifications.consistent = qualificationsConsistent;
-    //     const qualificationsTrainable = document.getElementById('qualifications-trainable').value;
-    //     userQualifications.trainable = qualificationsTrainable;
-    // }
-
-    // if (action.type === 'submitSkillsCommunication') {
-    //     const ? = document.getElementById('').value;
-    //     #.? = ?;
-    // }
-    // if (action.type === 'submitSkillsOrganization') {
-    //     const ? = document.getElementById('').value;
-    //     #.? = ?;
-    // }
-    // if (action.type === 'submitSkillsSolving') {
-    //     const ? = document.getElementById('').value;
-    //     #.? = ?;
-    // }
-    // if (action.type === '') {
-    //     const ? = document.getElementById('').value;
-    //     #.? = ?;
-    // }
     // if (action.type === '') {
     //     const ? = document.getElementById('').value;
     //     #.? = ?;
@@ -123,38 +114,90 @@ const reducer = (state, action) => {
         userInfo.email = userEmail;
 
         const strategyRole = document.getElementById('strategy-role').value;
-        userStrategy.role = strategyRole;
         const strategyPersonality = document.getElementById('strategy-personality').value;
-        userStrategy.personality = strategyPersonality;
         const strategyAccolades = document.getElementById('strategy-accolades').value;
-        userStrategy.accolades = strategyAccolades;
         const strategyWork = document.getElementById('strategy-work').value;
-        userStrategy.work = strategyWork;
+        userStrategy.Role = strategyRole;
+        userStrategy.Personality = strategyPersonality;
+        userStrategy.Accolades = strategyAccolades;
+        userStrategy.Work = strategyWork;
 
         const qualificationsManageable = document.getElementById('qualifications-manageable').value;
         const qualificationsConsistent = document.getElementById('qualifications-consistent').value;
         const qualificationsTrainable = document.getElementById('qualifications-trainable').value;
-        userQualifications.manageable = qualificationsManageable;
-        userQualifications.consistent = qualificationsConsistent;
-        userQualifications.trainable = qualificationsTrainable;
-    }
+        userQualifications.Manageable = qualificationsManageable;
+        userQualifications.Consistent = qualificationsConsistent;
+        userQualifications.Trainable = qualificationsTrainable;
 
+        const communicationSkill = document.getElementById('communication-skill').value;
+        const communicationDelivery = document.getElementById('communication-delivery').value;
+        const communicationConfirmation = document.getElementById('communication-confirmation').value;
+        userSkillsCommunication.Skill = communicationSkill;
+        userSkillsCommunication.Delivery = communicationDelivery;
+        userSkillsCommunication.Confirmation = communicationConfirmation;
+
+        const organizationFollow = document.getElementById('organization-follow').value;
+        const organizationTrustworthy = document.getElementById('organization-trustworthy').value;
+        const organizationIndependent = document.getElementById('organization-independent').value;
+        userSkillsOrganization.follow = organizationFollow;
+        userSkillsOrganization.Trustworthy = organizationTrustworthy;
+        userSkillsOrganization.Confirmation = organizationIndependent;
+
+        const solvingCommunicator = document.getElementById('solving-communicator').value;
+        const solvingExplainer = document.getElementById('solving-explainer').value;
+        const solvingResolver = document.getElementById('solving-resolver').value;
+        userSkillsSolving.Communicator = solvingCommunicator;
+        userSkillsSolving.Explainer = solvingExplainer;
+        userSkillsSolving.Resolver = solvingResolver;
+
+        const employer1Position = document.getElementById('employer1-position').value;
+        employer1.Position = employer1Position;
+        const employer1Start = document.getElementById('employer1-start').value;
+        employer1.Start = employer1Start;
+        const employer1End = document.getElementById('employer1-end').value;
+        employer1.End = employer1End;
+
+        // const solvingCommunicator = document.getElementById('solving-communicator').value;
+        // userSkillsSolving.Communicator = solvingCommunicator;
+        // const solvingExplainer = document.getElementById('solving-explainer').value;
+        // userSkillsSolving.Explainer = solvingExplainer;
+        // const solvingResolver = document.getElementById('solving-resolver').value;
+        // userSkillsSolving.Resolver = solvingResolver;
+
+        // const solvingCommunicator = document.getElementById('solving-communicator').value;
+        // userSkillsSolving.Communicator = solvingCommunicator;
+        // const solvingExplainer = document.getElementById('solving-explainer').value;
+        // userSkillsSolving.Explainer = solvingExplainer;
+        // const solvingResolver = document.getElementById('solving-resolver').value;
+        // userSkillsSolving.Resolver = solvingResolver;
+
+        // const solvingCommunicator = document.getElementById('solving-communicator').value;
+        // userSkillsSolving.Communicator = solvingCommunicator;
+        // const solvingExplainer = document.getElementById('solving-explainer').value;
+        // userSkillsSolving.Explainer = solvingExplainer;
+        // const solvingResolver = document.getElementById('solving-resolver').value;
+        // userSkillsSolving.Resolver = solvingResolver;
+
+        // const solvingCommunicator = document.getElementById('solving-communicator').value;
+        // userSkillsSolving.Communicator = solvingCommunicator;
+        // const solvingExplainer = document.getElementById('solving-explainer').value;
+        // userSkillsSolving.Explainer = solvingExplainer;
+        // const solvingResolver = document.getElementById('solving-resolver').value;
+        // userSkillsSolving.Resolver = solvingResolver;
+    }
 
     currentState = {
         userInfo: userInfo,
         userStrategy: userStrategy,
-        userQualifications: userQualifications
+        userQualifications: userQualifications,
+        userSkillsCommunication: userSkillsCommunication,
+        userSkillsOrganization: userSkillsOrganization,
+        userSkillsSolving: userSkillsSolving,
+        employer1: employer1,
+        educationHighSchool: educationHighSchool,
+        educationCollege: educationCollege,
+        educationUniversity: educationUniversity
     };
-    // currentState = {
-    //     userInfo: userInfo,
-    //     userStrategy: userStrategy,
-    //     userQualifications: this.userQualifications
-    // };
-    // currentState = {
-    //     userInfo: userInfo,
-    //     userStrategy: userStrategy,
-    //     userQualifications: this.userQualifications
-    // };
     return currentState;
 }
 
