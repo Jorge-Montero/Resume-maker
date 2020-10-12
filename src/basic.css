@@ -44,3 +44,6 @@
     border-style: groove; 
     border-color: gray; 
 }
+ul {
+    list-style-position: inside;
+}
