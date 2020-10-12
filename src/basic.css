@@ -1,14 +1,49 @@
+
 #top-input {
     justify-content: center;
     text-align: center;
 }
 #first-name-input {
     text-align: center;
-   
+    font-size: 200%;
+}
+#last-name-input {
+    text-align: center;
+    font-size: 200%;
+}
+#state-input {
+    text-align: center;
+    font-size: 120%;
+}
+#city-input {
+    text-align: center;
+    font-size: 120%;
+}
+#email-input {
+    text-align: center;
+    font-size: 120%;
 }
 #summary-statement {
+    text-align: center;
     width:auto;
-    height: 300px;
+    height: 150px;
+    border-style: outset;
+    border-color: gray;  
+}
+#statement-qualifications {
+    text-align: center;
+    width:auto;
+    height: 150px;
+    border-style: inset; 
+    border-color: gray;  
+}
+#relevant-skills {
+    text-align: center;
+    width:auto;
+    height: 180px;
     border-style: groove; 
-    border-color: black;  
+    border-color: gray; 
+}
+ul {
+    list-style-position: inside;
 }

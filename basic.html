@@ -11,8 +11,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="basic.css">
+    
+    <link rel="stylesheet" href="src/basic.css">
+    <link rel="stylesheet" href="src/default.css">
     <title>
         Basic Resume
     </title>
@@ -21,7 +22,7 @@
     <div id="root">
         <div class="container">
             <div class="dl" id="top-input">
-                <h3>
+                <p>
                     <section id="first-name-input">
                         <dt>
                             Lorem
@@ -32,22 +33,24 @@
                             Ipsum
                         </dt>
                     </section>
-                </h3>
-                <section id="state-input">
-                    <dd id="state">
-                        LI 
-                    </dd>
-                </section>
-                <section id="city-input">
-                    <dd id="city">
-                        Lorem city Ipsum
-                    </dd>
-                </section>
-                <section id="email-input">
-                    <dd id="email">
-                        lorem.ipsum@email.com
-                    </dd>
-                </section>
+                </p>
+                <p>
+                    <section id="state-input">
+                        <dd id="state">
+                            LI 
+                        </dd>
+                    </section>
+                    <section id="city-input">
+                        <dd id="city">
+                            Lorem city Ipsum
+                        </dd>
+                    </section>
+                    <section id="email-input">
+                        <dd id="email">
+                            lorem.ipsum@email.com
+                        </dd>
+                    </section>
+                </p>
             </div>
         </div>
     </div>
@@ -58,13 +61,14 @@
             </h2>
                 <ul>
                     <li id="what-did">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, labore ab? 
                     </li>
                     <li id="personality"></li>
                     <li id="accolades"></li>
                     <li id="looking-for"></li>
                 </ul>
         </div>
+        <br>
         <div id="statement-qualifications"class="container">
             <h2>
                 <p id="qualifications">
@@ -73,12 +77,13 @@
             </h2>
                 <ul>
                     <li id="manageable">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                
                     </li>
                     <li id="work-consistancy"></li>
                     <li id="trainable"></li>
                 </ul>
         </div>
+        <br>
         <div id="relevant-skills" class="container">
             <h2>
                 <p>
@@ -90,27 +95,27 @@
                         Communication
                     </dt>
                         <ul>
-                            <dd id="what-com">Lorem ipsum</dd>
-                            <dd id="how-com">Lorem ipsum</dd>
-                            <dd id="confirmation">Lorem ipsum</dd>
+                            <dd id="what-com"></dd>
+                            <dd id="how-com"></dd>
+                            <dd id="confirmation"></dd>
                 </div>
                 <div class="dl">
                     <dt id="organization">
                         Organization
                     </dt>
                         <ul> 
-                            <dd id="fallow-direction">Lorem ipsum</dd> 
-                            <dd id="built-trust">Lorem ipsum</dd>
-                            <dd id="work-independent">Lorem ipsum</dd>
+                            <dd id="fallow-direction"></dd> 
+                            <dd id="built-trust"></dd>
+                            <dd id="work-independent"></dd>
                 </div>
                 <div class="dl">
                     <dt id="problem-solving">
                         Problem-Solving
                     </dt>
                         <ul>
-                            <dd id="communicate">Lorem ipsum</dd>
-                            <dd id="listen">Lorem ipsum</dd>
-                            <dd id="pursued-resolution">Lorem ipsum</dd>
+                            <dd id="communicate"></dd>
+                            <dd id="listen"></dd>
+                            <dd id="pursued-resolution"></dd>
                         </ul>
                 
                 </div>
@@ -122,7 +127,7 @@
                 </h2>
                 <div class="dl">
                     <dt id="position">
-                        lorem ipsum
+                       
                             <dd id="hire-to-fire">
                                 <input id="work-date-s" type="date"/>
                                     Start
@@ -154,22 +159,10 @@
                     having issues selecting drop down options-->
             
                 <form name="highest-level" id="highest-level" action="/action_page.php">
-                    Highest Level   
+                   <label for="highest-level"> Highest Level</label>   
                     <select name="ed-2" id="ed-2">
                         <option value="1" selected="selected">
-                            <div class="dl">
-                                <dt id="school-name">
-                                    Lorem Ipsum
-                                    <input id="graduation-date" type="date"/>
-                                        Graduation
-                                    <dd id="city">
-                                        lorem city ipsum
-                                    </dd>
-                                    <dd id="state">
-                                        LI
-                                    </dd>
-                                </dt>
-                            </div>
+                            Lorem ipsum
                         </option>
       
                         <option value="2" selected="selected">
@@ -178,7 +171,7 @@
                         <option value="3" selected="selected">
                             Lorem ipsum
                         </option>
-                        <option value="1" selected="selected">
+                        <option value="4" selected="selected">
                             Lorem ipsum
                         </option>
                     </select>
@@ -187,6 +180,39 @@
       </div>
             <!-- possible option of format need to discuss-->
             <div class="dl">
+                <h4>High School</h4> 
+                <dt id="school-name">
+                    Lorem Ipsum
+                    <input id="graduation-date" type="date"/>
+                        Graduation
+                        <dd id="city">
+                            lorem city ipsum
+                        </dd>
+                        <dd id="state">
+                            LI
+                        </dd>
+                </dt>
+            </div>                            
+            <div class="dl">
+                <h4> 
+                    Associates Degree
+                </h4>
+                <dt id="school-name">
+                    Lorem Ipsum
+                    <input  type="date"/>
+                        Graduation
+                    <dd id="city">
+                        lorem city ipsum 
+                    </dd>
+                    <dd id="state">
+                        LI
+                    </dd>
+                </dt>
+            </div>
+            <div class="dl">
+                <h4> 
+                    Bachelors Degree
+                </h4>
                 <dt id="school-name">
                     Lorem Ipsum
                     <input  type="date"/>
