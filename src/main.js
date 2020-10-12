@@ -152,9 +152,9 @@ const reducer = (state, action) => {
 
         const employer1Position = document.getElementById('employer1-position').value;
         employer1.Position = employer1Position;
-        const employer1Start = document.getElementById('employer1-start').value;
+        const employer1Start = document.getElementById('employer1-date-start').value;
         employer1.Start = employer1Start;
-        const employer1End = document.getElementById('employer1-end').value;
+        const employer1End = document.getElementById('employer1-date-end').value;
         employer1.End = employer1End;
 
         // const solvingCommunicator = document.getElementById('solving-communicator').value;
