@@ -96,11 +96,6 @@ const reducer = (state, action) => {
         State: ""
     }
 
-    // if (action.type === '') {
-    //     const ? = document.getElementById('').value;
-    //     #.? = ?;
-    // }
-
     if (action.type === 'submitResume') {
         const userFirstName = document.getElementById('user-first-name').value;
         const userLastName = document.getElementById('user-last-name').value;
@@ -157,33 +152,6 @@ const reducer = (state, action) => {
         const employer1End = document.getElementById('employer1-date-end').value;
         employer1.End = employer1End;
 
-        // const solvingCommunicator = document.getElementById('solving-communicator').value;
-        // userSkillsSolving.Communicator = solvingCommunicator;
-        // const solvingExplainer = document.getElementById('solving-explainer').value;
-        // userSkillsSolving.Explainer = solvingExplainer;
-        // const solvingResolver = document.getElementById('solving-resolver').value;
-        // userSkillsSolving.Resolver = solvingResolver;
-
-        // const solvingCommunicator = document.getElementById('solving-communicator').value;
-        // userSkillsSolving.Communicator = solvingCommunicator;
-        // const solvingExplainer = document.getElementById('solving-explainer').value;
-        // userSkillsSolving.Explainer = solvingExplainer;
-        // const solvingResolver = document.getElementById('solving-resolver').value;
-        // userSkillsSolving.Resolver = solvingResolver;
-
-        // const solvingCommunicator = document.getElementById('solving-communicator').value;
-        // userSkillsSolving.Communicator = solvingCommunicator;
-        // const solvingExplainer = document.getElementById('solving-explainer').value;
-        // userSkillsSolving.Explainer = solvingExplainer;
-        // const solvingResolver = document.getElementById('solving-resolver').value;
-        // userSkillsSolving.Resolver = solvingResolver;
-
-        // const solvingCommunicator = document.getElementById('solving-communicator').value;
-        // userSkillsSolving.Communicator = solvingCommunicator;
-        // const solvingExplainer = document.getElementById('solving-explainer').value;
-        // userSkillsSolving.Explainer = solvingExplainer;
-        // const solvingResolver = document.getElementById('solving-resolver').value;
-        // userSkillsSolving.Resolver = solvingResolver;
     }
 
     currentState = {
@@ -226,21 +194,6 @@ store.subscribe(() => {
     console.log(store.getState()); // output this everytime ANY 'dispatch' is sent
 });
 
-// document.getElementById('submitUserInfo').onclick = () => {
-//     store.dispatch({
-//         type: "submitUserInfo"
-//     });
-// };
-// document.getElementById('submitStrategy').onclick = () => {
-//     store.dispatch({
-//         type: "submitStrategy"
-//     });
-// };
-// document.getElementById('submitQualifications').onclick = () => {
-//     store.dispatch({
-//         type: "submitQualifications"
-//     });
-// };
 document.getElementById('submitResume').onclick = () => {
     store.dispatch({
         type: "submitResume"
@@ -253,9 +206,3 @@ let scrollToBottom = () => {
     scrollingElement.scrollTop = scrollingElement.scrollHeight;
 };
 
-// below requires 'full' JQuery
-// let scrollSmoothToBottom = (id) => {
-//     $(scrollingElement).animate({
-//         scrollTop: document.body.scrollHeight
-//     }, 500);
-// };
