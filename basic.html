@@ -35,18 +35,18 @@
                     </section>
                 </p>
                 <p>
-                    <section id="state-input">
-                        <dd id="state">
+                    <section id="state-input-a">
+                        <dd id="state-a">
                             LI 
                         </dd>
                     </section>
-                    <section id="city-input">
-                        <dd id="city">
+                    <section id="city-input-a">
+                        <dd id="city-a">
                             Lorem city Ipsum
                         </dd>
                     </section>
-                    <section id="email-input">
-                        <dd id="email">
+                    <section id="email-input-a">
+                        <dd id="email-a">
                             lorem.ipsum@email.com
                         </dd>
                     </section>
@@ -122,18 +122,17 @@
         </div>
         <div class="container">
             <div id="work-history" class="article">
-                <h2>
+                <h3>
                     Work History
-                </h2>
+                </h3>
                 <div class="dl">
                     <dt id="position">
-                       
-                            <dd id="hire-to-fire">
-                                <input id="work-date-s" type="date"/>
-                                    Start
-                                <input id="work-date-f" type="date"/>
-                                    End
-                            </dd>
+                       <dd id="hire-to-fire">
+                            <p> Start</p>
+                                <div id="work-date-start"></div>
+                            <p>End</p>
+                                <div id="work-date-finish"></div>  
+                        </dd>
                     </dt>
                 </div>
                 <!-- [saw was off index need to talk about]
@@ -155,77 +154,40 @@
             <h3>
                 Education
             </h3>
-            <!--  **???***make a drop down menu here(of grad / degree/certs) 
-                    having issues selecting drop down options-->
-            
-                <form name="highest-level" id="highest-level" action="/action_page.php">
-                   <label for="highest-level"> Highest Level</label>   
-                    <select name="ed-2" id="ed-2">
-                        <option value="1" selected="selected">
-                            Lorem ipsum
-                        </option>
-      
-                        <option value="2" selected="selected">
-                            Lorem ipsum
-                        </option>
-                        <option value="3" selected="selected">
-                            Lorem ipsum
-                        </option>
-                        <option value="4" selected="selected">
-                            Lorem ipsum
-                        </option>
-                    </select>
-                </form>
-            </div>
-      </div>
-            <!-- possible option of format need to discuss-->
             <div class="dl">
-                <h4>High School</h4> 
-                <dt id="school-name">
-                    Lorem Ipsum
-                    <input id="graduation-date" type="date"/>
-                        Graduation
-                        <dd id="city">
-                            lorem city ipsum
-                        </dd>
-                        <dd id="state">
-                            LI
-                        </dd>
-                </dt>
+                <h4>
+                    High School
+                </h4> 
+                    <dt id="school-name-1">
+                        <p> Graduation</p>
+                            <div id="graduation-date-1"></div>
+                                <dd id="city-1"></dd>
+                                <dd id="state-1"></dd>
+                    </dt>
             </div>                            
             <div class="dl">
                 <h4> 
                     Associates Degree
                 </h4>
-                <dt id="school-name">
-                    Lorem Ipsum
-                    <input  type="date"/>
-                        Graduation
-                    <dd id="city">
-                        lorem city ipsum 
-                    </dd>
-                    <dd id="state">
-                        LI
-                    </dd>
+                <dt id="school-name-2">
+                    <p>Graduation</p>
+                        <div id="graduation-date-2"></div>
+                            <dd id="city-2"></dd>
+                            <dd id="state-2"></dd>
                 </dt>
             </div>
             <div class="dl">
                 <h4> 
                     Bachelors Degree
                 </h4>
-                <dt id="school-name">
-                    Lorem Ipsum
-                    <input  type="date"/>
-                        Graduation
-                    <dd id="city">
-                        lorem city ipsum 
-                    </dd>
-                    <dd id="state">
-                        LI
-                    </dd>
+                <dt id="school-name-3">
+                    <p> Graduation</p>
+                        <div id="graduation-date-3"></div>
+                            <dd id="city-3"></dd>
+                            <dd id="state-3"></dd>
                 </dt>
             </div>
-        
+        </div>
         <script src="src/basic.js"></script>
     </div>
 </body>
