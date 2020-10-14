@@ -61,7 +61,9 @@ table {
 h1 {
 	padding: 20px;
 }
-
+li {
+	margin: auto;
+}
 /* ---------- END: Default CSS */
 
 /* Small devices (landscape phones, 576px and up) */
