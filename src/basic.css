@@ -1,4 +1,6 @@
-
+.grid-container {
+    display: grid
+}
 #top-input {
     justify-content: center;
     text-align: center;
